@@ -10,9 +10,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "aluno")
+@Table(name = "alunos")
+public class Aluno {
 
-public class aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -24,14 +24,19 @@ public class aluno {
     @Column(name = "data_nascimento")
     private LocalDate dataNascimento;
 
-    public aluno() {
+    // construtor padrão
+    public Aluno() {
     }
 
-    public aluno(Integer id, String nome, LocalDate dataNascimento) {
+ 
+
+    public Aluno(Integer id, String nome, LocalDate dataNascimento) {
         this.id = id;
         this.nome = nome;
         this.dataNascimento = dataNascimento;
     }
+
+
 
     public Integer getId() {
         return id;
@@ -56,9 +61,9 @@ public class aluno {
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+
+
+    
+
 }
-
-
-
-
-
+    

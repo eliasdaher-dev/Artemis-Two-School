@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../../../.."
+		},
+		{
+			"path": "../../../../../../../../../../../api/controle-frequencia/controle_sequencia/src/main/java/com/senai/backend/controle_sequencia/Repositories"
+		},
+		{
+			"path": "../../../../../../../../../../../api/controle-frequencia/controle_sequencia/src/main/java/com/senai/backend/controle_sequencia/Services"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}
