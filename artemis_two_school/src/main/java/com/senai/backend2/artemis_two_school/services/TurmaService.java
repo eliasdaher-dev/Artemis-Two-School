@@ -5,13 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.senai.backend2.artemis_two_school.repositories.AlunoRepository;
-import com.senai.backend2.artemis_two_school.repositories.TurmaRepository;
-import com.senai.backend2.artemis_two_school.repositories.AlunoRepository;
-import com.senai.backend2.artemis_two_school.models.Aluno;
 import com.senai.backend2.artemis_two_school.models.Turma;
-import com.senai.backend2.artemis_two_school.models.Aluno;
-import com.senai.backend2.artemis_two_school.repositories.AlunoRepository;
+import com.senai.backend2.artemis_two_school.repositories.TurmaRepository;
+
+
 
 @Service
 public class TurmaService {
@@ -23,11 +20,11 @@ public class TurmaService {
     }
 
     public Turma buscarTurma(Integer id) {
-        return TurmaRepository.findById(id).get();
+        return turmaRepository.findById(id).get();
     }
 
     public List<Turma> listarTurma() {
-        return TurmaRepository.findAll();
+        return turmaRepository.findAll();
     }
 
     public Boolean deletarTurma(Integer id) {
@@ -39,7 +36,7 @@ public class TurmaService {
     }
 
     public Turma cadastrarTurma(Turma turma) {
-        return TurmaRepository.save(turma);
+        return turmaRepository.save(turma);
     }
 
     public Turma atualizarTurma(Integer id, Turma turma) {

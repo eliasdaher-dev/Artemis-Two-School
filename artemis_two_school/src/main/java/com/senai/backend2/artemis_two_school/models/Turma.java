@@ -14,12 +14,13 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "turma")
-
 public class Turma {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
+    
     @Column(name = "turma")
     private String turma;
 
